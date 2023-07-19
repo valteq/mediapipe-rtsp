@@ -11,7 +11,7 @@ docker run -p 8554:8554 neilvaltec/drone_camera_rtsp_simulator:0.0.2
 
 2. Open another terminal, run container no.2
 ```
-docker run -it --network=container:${container_no1_id} neilvaltec/mediapipe_rtsp:0.0.1 bash
+docker run -it --network=container:${container_no1_id} neilvaltec/mediapipe_rtsp:0.0.3 bash
 ```
 
 3. Inside container no.2, run
