@@ -1,0 +1,8 @@
+FROM borda/docker_python-opencv-ffmpeg:cpu-py3.8-cv4.5.4
+
+WORKDIR /
+
+RUN pip install mediapipe
+
+RUN mkdir mediapipe-gstreamer
+COPY . /mediapipe-gstreamerdoc
