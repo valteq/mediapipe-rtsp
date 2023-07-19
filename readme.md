@@ -32,3 +32,6 @@ vlc rtsp://localhost:8554/drone_camera
 ## Notes
 1. Live stream mediapipe is running using [async](https://developers.google.com/mediapipe/api/solutions/python/mp/tasks/vision/ObjectDetector#detect_async). So if mediapipe is not able to catch up with the original FPS, it'll drop/skip the inference for that time. From the link "To lower the overall latency, object detector may drop the input images if needed. In other words, it's not guaranteed to have output per input image."
 2. Disabling detector makes the RTSP smoother.
+
+## REF
+1. https://github.com/googlesamples/mediapipe/tree/main/examples/object_detection/python/object_detector_live_stream
